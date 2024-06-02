@@ -1,0 +1,567 @@
+{
+	"info": {
+		"_postman_id": "bde4b358-316b-41a4-a9d2-8e787641ca90",
+		"name": "Job Search",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26978677",
+		"_collection_link": "https://www.postman.com/telecoms-candidate-23086375/workspace/assignment-3/collection/26978677-bde4b358-316b-41a4-a9d2-8e787641ca90?action=share&source=collection_link&creator=26978677"
+	},
+	"item": [
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Add Company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Adsela\",\r\n    \"description\":\"Programming Company for Professinal\",\r\n    \"industry\":\"Programming Company\",\r\n    \"companyEmail\":\"Adsela00@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update company",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Company",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Soft Delete",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Company",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search By Name",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Applications for jobs",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Job",
+			"item": [
+				{
+					"name": "create job",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"programmer55\",\r\n    \"Description\":\"Design Website\",\r\n    \"workingTime\":\"full-time\",\r\n    \"technicalSkills\":[\"write fastly,intelligent\"],\r\n    \"softSkills\":[\"helpful\"]\r\n}    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/job",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"job"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update job",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"programmer55\",\r\n    \"Description\":\"Design Website\",\r\n    \"workingTime\":\"full-time\",\r\n    \"technicalSkills\":[\"write fastly,intelligent\"],\r\n    \"softSkills\":[\"helpful\"]\r\n}    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/job/65bd6ba3d5835477d9c253fa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"job",
+								"65bd6ba3d5835477d9c253fa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Soft Delete Job",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/job/65bd6ba3d5835477d9c253fa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"job",
+								"65bd6ba3d5835477d9c253fa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "jobsWithCompanies",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get Jobs For One Company",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Job",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/job/65c227c310ed6e6cbcca013e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"job",
+								"65c227c310ed6e6cbcca013e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all jobs with filter",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "makeAppliction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "jobId",
+									"value": "65c2345d04bf9e8f0635c66b",
+									"type": "text"
+								},
+								{
+									"key": "userId",
+									"value": "65c21cab67f2adb1c7c0b3bf",
+									"type": "text"
+								},
+								{
+									"key": "userTechSkills",
+									"value": "[\"Teamwork\", \"Communication\"]",
+									"type": "text"
+								},
+								{
+									"key": "userSoftSkills",
+									"value": "[\"Node.js\",\".Net\", \"JavaScript\", \"MongoDB\",\"React\",\"css\"]",
+									"type": "text"
+								},
+								{
+									"key": "cv",
+									"type": "file",
+									"src": "/C:/Users/Karem/Downloads/Project Brief - Annual Gathering .pdf"
+								},
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/job/makeAppliction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"job",
+								"makeAppliction"
+							],
+							"query": [
+								{
+									"key": "workingTime",
+									"value": "part-time",
+									"disabled": true
+								},
+								{
+									"key": "location",
+									"value": "onsite",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"karem\",\r\n    \"lastName\":\"kamal\",\r\n    \"password\":\"karem123\",\r\n    \"email\":\"19karemkamal@gmail.com\",\r\n    \"DOB\":\"2023-9-20\",\r\n    \"mobileNumber\":\"01110245008\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"19karemkamal@gmail.com\",\r\n    \"password\":\"karem123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/signIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePassword",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"19karemkamal@gmail.com\",\r\n    \"oldPassword\":\"123456\",\r\n    \"newPassword\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/updatePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"updatePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Code",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/auth/signIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgetPassword",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"61395\",\r\n    \"password\":\"koko123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/forgetPassword/19karemkamal@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"forgetPassword",
+								"19karemkamal@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"karem\",\r\n    \"lastName\":\"kamal\",\r\n    \"password\":\"karem123\",\r\n    \"email\":\"19karemkamal@gmail.com\",\r\n    \"DOB\":\"2002-9-18\",\r\n    \"mobileNumber\":\"01110245008\",\r\n    \"recoveryEmail\":\"karemkamal02@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/65bf8ce2d03f6191047a3e67",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"65bf8ce2d03f6191047a3e67"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Soft Delete user",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/65bfc704e17e39a9e0543ebb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"65bfc704e17e39a9e0543ebb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAcountData",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "getProfile For another",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "accountsWithRecoveryEmail",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthcmVta2FtYWw2NkBnbWFpbC5jb20iLCJfaWQiOiI2NWMzNjExNzc0MDFiNGUwNDU3ZWY4NGQiLCJpYXQiOjE3MDczMDMzNzgsImV4cCI6MTcwOTg5NTM3OH0.itu2GOoM5ge8zrFZMCs3Bjfu7k3yxVHZyjlzZh5_dw0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
